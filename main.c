@@ -74,13 +74,13 @@ int main()
 
 /*******************************************************************************/
 /*
-f(ResetBoard): Clear O-X played board.
-
-Parameters: NONE.
-
-Returns: NONE.
-
-Notes: Also clear position data in CopyBoard[][].
+  f(ResetBoard): Clear O-X played board.
+  
+  Parameters: NONE.
+  
+  Returns: NONE.
+  
+  Notes: Also clear position data in CopyBoard[][].
 */
 /*******************************************************************************/
 void ResetBoard()
@@ -101,13 +101,13 @@ void ResetBoard()
 
 /*******************************************************************************/
 /*
-f(ShowCard): Display the played board and hint position board.
-
-Parameters: NONE.
-
-Returns: NONE.
-
-Notes: NONE.
+  f(ShowCard): Display the played board and hint position board.
+  
+  Parameters: NONE.
+  
+  Returns: NONE.
+  
+  Notes: NONE.
 */
 /*******************************************************************************/
 void ShowBoard()
@@ -149,13 +149,13 @@ void ShowBoard()
 
 /*******************************************************************************/
 /*
-f(PlayerX): Check round and tell user are 1st player or 2nd player.
-
-Parameters: int round // 1-9 round.
-
-Returns: 1 or 2 //Player.
-
-Notes: NONE.
+  f(PlayerX): Check round and tell user are 1st player or 2nd player.
+  
+  Parameters: int round // 1-9 round.
+  
+  Returns: 1 or 2 //Player.
+  
+  Notes: NONE.
 */
 /*******************************************************************************/
 int PlayerX(int round)
@@ -168,13 +168,13 @@ int PlayerX(int round)
 
 /*******************************************************************************/
 /*
-f(PlayerSymbol): Check round and tell user are X or O.
-
-Parameters: int round // 1-9 round.
-
-Returns: X or O //Player symbol.
-
-Notes: Give 'X' equal to 0 and 'O' equal to 1.
+  f(PlayerSymbol): Check round and tell user are X or O.
+  
+  Parameters: int round // 1-9 round.
+  
+  Returns: X or O //Player symbol.
+  
+  Notes: Give 'X' equal to 0 and 'O' equal to 1.
 */
 /*******************************************************************************/
 char PlayerSymbol(int round)
@@ -194,13 +194,13 @@ char PlayerSymbol(int round)
 
 /*******************************************************************************/
 /*
-f(CheckPosition): Check duplicate position.
-
-Parameters: int position //user entered number(position).
-
-Returns: 0 or 1 // If it is a duplicate position return 0 --> while loop
-
-Notes:
+  f(CheckPosition): Check duplicate position.
+  
+  Parameters: int position //user entered number(position).
+  
+  Returns: 0 or 1 // If it is a duplicate position return 0 --> while loop
+  
+  Notes:
 */
 /*******************************************************************************/
 int CheckPosition(int position)
@@ -221,16 +221,16 @@ int CheckPosition(int position)
 
 /*******************************************************************************/
 /*
-f(placePosition): place X or O in to played board.
-
-Parameters:
-int position // User entered number(position)
-int round
-
-Returns: NONE.
-
-Notes: Give 'X' = 0 and 'O' = 1, copy board[][] to CopyBoard[][] and then
-assign 0 or 1 in position that user entered.
+  f(placePosition): place X or O in to played board.
+  
+  Parameters:
+  int position // User entered number(position)
+  int round
+  
+  Returns: NONE.
+  
+  Notes: Give 'X' = 0 and 'O' = 1, copy board[][] to CopyBoard[][] and then
+  assign 0 or 1 in position that user entered.
 */
 /*******************************************************************************/
 void placePosition(int position, int round)
@@ -261,13 +261,13 @@ void placePosition(int position, int round)
 
 /*******************************************************************************/
 /*
-f(CheckWin): Check for win the game.
-
-Parameters: NONE.
-
-Returns: 0 or 1 // If return 0, continue to the game. Return 1, end the game.
-
-Notes: NONE.
+  f(CheckWin): Check for win the game.
+  
+  Parameters: NONE.
+  
+  Returns: 0 or 1 // If return 0, continue to the game. Return 1, end the game.
+  
+  Notes: NONE.
 */
 /*******************************************************************************/
 int CheckWin()
